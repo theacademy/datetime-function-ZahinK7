@@ -34,7 +34,7 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getLaterDatebyDays(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		//Using Java DateTime API to use the .plusDays() to calculate date in the future from today
+		//Using Java DateTime API to use the .plusDays() to calculate date in the future from today.
 		return date.plusDays(x);
 		//YOUR CODE ENDS HERE
 
@@ -46,7 +46,7 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getPreviousDatebyWeeks(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		//Using Java DateTime API to use the .plusDays() to calculate date in the past from today
+		//Using Java DateTime API to use the .plusDays() to calculate date in the past from today.
 		return date.minusWeeks(x);
 		//YOUR CODE ENDS HERE
 
@@ -59,7 +59,7 @@ public class DateTimeFunctions {
 	 */
 	public static String getTimeDifference(LocalDate date1, LocalDate date2) {
 		//YOUR CODE STARTS HERE
-		//Using Java DateTime API to use the .until() to get an object (Period) in order to use getters to have the years, months and days
+		//Using Java DateTime API to use the .until() to get an object (Period) in order to use getters to have the years, months and days.
 		Period period = date1.until(date2);
 		return "Years-" + period.getYears() + ":Months-" + period.getMonths() + ":Days-" + period.getDays();
 		//YOUR CODE ENDS HERE
